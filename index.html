@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wordly Dictionary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>📖 Wordly Dictionary</h1>
+
+  <form id="form">
+    <input 
+      type="text" 
+      id="input" 
+      placeholder="Enter a word..." 
+      aria-label="Search word"
+      required
+    >
+    <button type="submit">Search</button>
+  </form>
+
+  <button id="themeBtn">🌙 Toggle Theme</button>
+
+  <p id="error"></p>
+  <div id="result"></div>
+
+  <h3>⭐ Saved Words</h3>
+  <div id="favorites"></div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

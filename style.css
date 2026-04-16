@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  transition: 0.3s;
+}
+
+.container {
+  width: 60%;
+  margin: 50px auto;
+  padding: 20px;
+
+  /* NEW STYLING */
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.dark input,
+.dark button {
+  background: #444;
+  color: white;
+  border: 1px solid #666;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.error {
+  color: red;
+}
+
+.dark {
+  background: #1e1e1e;
+  color: white; /* 🔥 THIS FIXES IT */
+}
+
+.saved-word {
+  background: yellow;
+  font-weight: bold;
+}
+
+.loading {
+  color: blue;
+}
+/* FAVORITES GRID */
+#favorites {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+/* CARD STYLE */
+.favorite-card {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* BUTTONS INSIDE CARD */
+.card-btn {
+  margin-left: 5px;
+  cursor: pointer;
+}
+/* POSITION THE THEME BUTTON */
+#themeBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  z-index: 1000;
+}
+.dark {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark .container {
+  background: lightslategray;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark p,
+.dark span {
+  color: white;
+}
+
+
+.dark .favorite-card {
+  background:grey;
+  color: white;
+}
