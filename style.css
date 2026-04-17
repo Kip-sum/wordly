@@ -42,7 +42,7 @@ input, button {
 
 .dark {
   background: #1e1e1e;
-  color: white; /* 🔥 THIS FIXES IT */
+  color: white; 
 }
 
 .saved-word {

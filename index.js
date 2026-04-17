@@ -76,7 +76,7 @@ function displayWord(data) {
     ${meaningsHTML}
 
     <button onclick="saveWord('${word}')">
-      ${isSaved ? "Saved ✅" : "Save ⭐"}
+      ${isSaved ? "Saved " : "Save "}
     </button>
 
     <p><b>Source:</b> 
